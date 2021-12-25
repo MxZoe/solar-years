@@ -7,12 +7,11 @@ describe('Year', ()=>{
   });
 
   test('should create a Year object with age and lifeExpectancy attributes', ()=>{
-    
     expect(testYear.age).toEqual(31);
     expect(testYear.lifeExpectancy).toEqual(80);
-  })
+  });
 
-  test('should return the mercury equivelant of the user\'s age'){
-
-  }
+  test('should return the mercury equivelant of the user\'s age', ()=>{
+    expect(testYear.getMercury()).toEqual(129.1677);
+  });
 })

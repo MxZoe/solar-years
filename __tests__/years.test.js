@@ -22,4 +22,8 @@ describe('Year', ()=>{
   test('should return the mars equivelant of the user\'s age', ()=>{
     expect(testYear.getMars()).toEqual(16.4889);
   });
+
+  test('should return the jupiter equivelant of the user\'s age', ()=>{
+    expect(testYear.getJupiter()).toEqual(2.6133);
+  });
 })

@@ -1,7 +1,7 @@
 import Year from './../src/js/years.js'
 
 describe('Year', ()=>{
-  const testYear;
+  let testYear;
   beforeEach(()=>{
     testYear = new Year(31, 80);
   });

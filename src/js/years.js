@@ -3,4 +3,8 @@ export default class Year{
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
   }
+
+  getMercury(){
+    return this.age * 4.1667;
+  }
 }

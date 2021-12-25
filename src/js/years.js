@@ -15,4 +15,8 @@ export default class Year{
   getMars(){
     return this.age * .5319;
   }
+
+  getJupiter(){
+    return this.age * .0843;
+  }
 }

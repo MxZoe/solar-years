@@ -11,4 +11,8 @@ export default class Year{
   getVenus(){
     return this.age * 1.6129;
   }
+
+  getMars(){
+    return this.age * .5319;
+  }
 }

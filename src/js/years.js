@@ -7,4 +7,8 @@ export default class Year{
   getMercury(){
     return this.age * 4.1667;
   }
+
+  getVenus(){
+    return this.age * 1.6129;
+  }
 }

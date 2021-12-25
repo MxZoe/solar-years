@@ -26,4 +26,8 @@ describe('Year', ()=>{
   test('should return the jupiter equivelant of the user\'s age', ()=>{
     expect(testYear.getJupiter()).toEqual(2.6133);
   });
+
+  test('should return an array of the user\'s age on each planet', ()=>{
+    expect(testYear.getSolar()).toEqual([129.1677, 49.9999, 31, 16.4889, 2.6133])
+  });
 })

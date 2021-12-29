@@ -32,12 +32,18 @@ export default class Year{
 
   getLife(){
     let remaining = this.lifeExpectancy - this.age;
+  
     let mercury = this.getMercury(remaining);
     let venus = this.getVenus(remaining);
     let earth = remaining;
     let mars = this.getMars(remaining);
     let jupiter = this.getJupiter(remaining);
-    
-    return [mercury, venus, earth, mars,jupiter];
+    let planetArray = [mercury, venus, earth, mars,jupiter];
+    if(remaining < 0){
+      for(let i=0; i <planetArray.length; i++){
+        planetArray[i] *= -1;
+      }
+    }
+    return planetArray;
   }
 }

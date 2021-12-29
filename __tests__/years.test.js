@@ -12,19 +12,19 @@ describe('Year', ()=>{
   });
 
   test('should return the mercury equivelant of the user\'s age', ()=>{
-    expect(testYear.getMercury()).toEqual(129.1677);
+    expect(testYear.getMercury(testYear.age)).toEqual(129.1677);
   });
 
   test('should return the venus equivelant of the user\'s age', ()=>{
-    expect(testYear.getVenus()).toEqual(49.9999);
+    expect(testYear.getVenus(testYear.age)).toEqual(49.9999);
   });
 
   test('should return the mars equivelant of the user\'s age', ()=>{
-    expect(testYear.getMars()).toEqual(16.4889);
+    expect(testYear.getMars(testYear.age)).toEqual(16.4889);
   });
 
   test('should return the jupiter equivelant of the user\'s age', ()=>{
-    expect(testYear.getJupiter()).toEqual(2.6133);
+    expect(testYear.getJupiter(testYear.age)).toEqual(2.6133);
   });
 
   test('should return an array of the user\'s age on each planet', ()=>{

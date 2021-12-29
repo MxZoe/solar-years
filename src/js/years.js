@@ -29,4 +29,8 @@ export default class Year{
 
     return [mercury, venus, earth, mars, jupiter];
   }
+
+  getLife(){
+    
+  }
 }

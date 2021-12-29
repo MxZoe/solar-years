@@ -35,5 +35,9 @@ describe('Year', ()=>{
     expect(testYear.getLife()).toEqual([204.1683, 79.0321, 49, 26.063100000000002, 4.1307])
   });
 
+  test('should return years the life expectancy was exceeded by if the age is greater than the life expectancy', ()=>{
+    const oldAge = new Year(90, 80);
+    expect(testYear.getLife()).toEqual([41.667, 16.129, 10, 5.319, 0.843])
+  })
   
 })

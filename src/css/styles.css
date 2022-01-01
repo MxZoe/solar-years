@@ -1,0 +1,11 @@
+#ageDisplay{
+  display: none;
+}
+
+#remainingDisplay{
+  display: none;
+}
+
+#exceededDisplay{
+  display: none;
+}

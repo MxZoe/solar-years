@@ -8,6 +8,7 @@ function displayAges(currentYear){
   const planetDisplay = ['#mercuryAge', '#venusAge', '#earthAge', '#marsAge', "#jupiterAge"];
   const planetYears = currentYear.getSolar();
   for(let i=0; i<planetDisplay.length; i++){
+    planetYears[i] = parseFloat(planetYears[i]).toFixed(2);  
     $(planetDisplay[i]).html(planetYears[i]);
   }
   $("#ageDisplay").show();
@@ -18,11 +19,13 @@ function displayLife(currentYear){
   const expectancy = currentYear.getLife();
   if(currentYear.age > currentYear.lifeExpectancy){
     for(let i = 0; i < exceededDisplay.length; i++){
+      expectancy[i] = parseFloat(expectancy[i]).toFixed(2);
       $(exceededDisplay[i]).html(expectancy[i]);
       $("#exceededDisplay").show();
     }
   } else {
     for(let i = 0; i < exceededDisplay.length; i++){
+      expectancy[i] = parseFloat(expectancy[i]).toFixed(2);
       $(remainingDisplay[i]).html(expectancy[i]);
       $("#remainingDisplay").show()
     }

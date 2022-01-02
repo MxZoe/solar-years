@@ -1,3 +1,6 @@
+body{
+  background: rgb(179, 177, 177);
+}
 #ageDisplay{
   display: none;
 }
@@ -8,4 +11,31 @@
 
 #exceededDisplay{
   display: none;
+}
+
+#pageTitle{
+  text-align: center;
+  padding: 3%;
+  margin: 1%;
+  border-bottom: 2px solid lightgray;
+}
+
+.col-md-4{
+  margin: 2%;
+}
+#age{
+  width: 22%;
+}
+
+#lifeExpectancy{
+  width: 22%;
+}
+
+#submitButton{
+background-color: rgb(83, 78, 78);
+margin-top: 3%;
+}
+
+#ageDisplay{
+  border-bottom: 2px solid lightgray;
 }
